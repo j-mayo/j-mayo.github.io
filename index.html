@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaeyo Shin - M.S Graduate Student</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="https://esm.run/framer-motion"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="text-2xl font-bold tracking-tight">Jaeyo Shin</a>
+                <nav>
+                    <ul class="flex space-x-6 sm:space-x-8">
+                        <li><a href="#about" class="nav-link hover:text-gray-900 dark:hover:text-gray-300 transition-colors">About</a></li>
+                        <li><a href="#research-interest" class="nav-link hover:text-gray-900 dark:hover:text-gray-300 transition-colors">Research Interest</a></li>
+                        <li><a href="#education" class="nav-link hover:text-gray-900 dark:hover:text-gray-300 transition-colors">Education</a></li>
+                        <li><a href="#experience" class="nav-link hover:text-gray-900 dark:hover:text-gray-300 transition-colors">Experience</a></li>
+                        <li><a href="#publications" class="nav-link hover:text-gray-900 dark:hover:text-gray-300 transition-colors">Publications</a></li>
+                        <li><a href="#contact" class="nav-link hover:text-gray-900 dark:hover:text-gray-300 transition-colors">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="mobile-menu-button" class="sm:hidden p-2">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden sm:hidden bg-gray-800 text-gray-100 absolute top-full left-0 right-0 shadow-lg">
+            <ul class="flex flex-col items-center space-y-4 py-4">
+                <li><a href="#about" class="nav-link mobile-nav-link block py-2 px-4 hover:bg-gray-700 rounded">About</a></li>
+                <li><a href="#research-interest" class="nav-link mobile-nav-link block py-2 px-4 hover:bg-gray-700 rounded">Research Interest</a></li>
+                <li><a href="#education" class="nav-link mobile-nav-link block py-2 px-4 hover:bg-gray-700 rounded">Education</a></li>
+                <li><a href="#experience" class="nav-link mobile-nav-link block py-2 px-4 hover:bg-gray-700 rounded">Experience</a></li>
+                <li><a href="#publications" class="nav-link mobile-nav-link block py-2 px-4 hover:bg-gray-700 rounded">Publications</a></li>
+                <li><a href="#contact" class="nav-link mobile-nav-link block py-2 px-4 hover:bg-gray-700 rounded">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="hero" class="min-h-[calc(100vh-5rem)] flex items-center bg-gray-900 text-gray-100 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-4">
+                    Hello, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-100">Jaeyo Shin</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-300 mb-8">M.S student at Kim Jaechul Graduate School of AI</p>
+                <a href="#about" class="inline-block bg-gray-100 text-gray-800 font-semibold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors shadow-md">
+                    Learn More About Me
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 sm:py-24 bg-gray-50 text-gray-800 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 max-w-4xl mx-auto">
+                    <div class="md:w-1/3 flex-shrink-0">
+                        <div class="w-48 h-48 md:w-full md:h-auto md:aspect-square bg-gray-300 rounded-lg shadow-lg flex items-center justify-center mx-auto">
+                            <img src="my.jpg" alt="Jaeyo Shin Profile" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-6 text-lg text-gray-700">
+                        <p>I am an M.S. student at KAIST, Kim Jaechul Graduate School of AI, and a member of the <a href="https://kaist-cvml.github.io/" target="_blank" class="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors font-medium">CVML</a> Lab, My current research focuses on Generative Modeling, 3D Geometry and Vision-Language Action Models.</p>
+                        <p>I am driven by a desire to leverage artificial intelligence to solve complex real-world challenges and push the boundaries of multimodal understanding. I believe in developing robust, scalable AI systems that seamlessly connect perception with action.</p>
+                        <p>Beyond academics, I enjoy playing the <a href="https://www.youtube.com/watch?v=6km0NkFcp4Y" target="_blank" class="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors font-medium">piano</a>.</p>
+                        <div class="text-center md:text-left mt-10">
+                            <a href="CV_JaeyoShin.pdf" target="_blank" class="inline-flex items-center bg-gray-800 text-gray-100 font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors shadow">
+                                <i data-lucide="download" class="h-5 w-5 mr-2"></i>
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research-interest" class="py-16 sm:py-24 bg-gray-100 text-gray-800 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-center">Research Interest</h2>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="h-6 w-6 text-gray-800 mr-4 flex-shrink-0"></i>
+                            <span>Generative Modeling (e.g., Diffusion Models, LLMs)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="h-6 w-6 text-gray-800 mr-4 flex-shrink-0"></i>
+                            <span>3D Geometry and Vision</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle-2" class="h-6 w-6 text-gray-800 mr-4 flex-shrink-0"></i>
+                            <span>Vision-Language Action Models</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-16 sm:py-24 bg-gray-50 text-gray-800 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Education</h2>
+                <div class="space-y-10 max-w-3xl mx-auto">
+                    <div class="relative pl-8 border-l-2 border-gray-300">
+                        <div class="absolute -left-3 top-1 w-5 h-5 bg-gray-800 rounded-full border-4 border-gray-50"></div>
+                        <h3 class="text-xl font-semibold mb-1">M.S. in Artificial Intelligence</h3>
+                        <p class="text-gray-600 text-sm mb-1">KAIST, Kim Jaechul Graduate School of AI</p>
+                        <p class="text-gray-500 text-xs mb-3">September 2024 – Present</p>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-gray-300">
+                        <div class="absolute -left-3 top-1 w-5 h-5 bg-gray-800 rounded-full border-4 border-gray-50"></div>
+                        <h3 class="text-xl font-semibold mb-1">B.S. in Mathematics and Computer Science</h3>
+                        <p class="text-gray-600 text-sm mb-1">Sogang University</p>
+                        <p class="text-gray-500 text-xs mb-3">March 2018 – August 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 sm:py-24 bg-gray-100 text-gray-800 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Experience</h2>
+                <div class="space-y-10 max-w-3xl mx-auto">
+                    <div class="relative pl-8 border-l-2 border-gray-300">
+                        <div class="absolute -left-3 top-1 w-5 h-5 bg-gray-800 rounded-full border-4 border-gray-100"></div>
+                        <h3 class="text-xl font-semibold mb-1"> KAIRI Intern </h3>
+                        <p class="text-gray-600 text-sm mb-1">KAIST, Kim Jaechul Graduate School of AI</p>
+                        <p class="text-gray-500 text-xs mb-3">June 2023 – August 2023</p>
+                        <ul class="text-gray-700 space-y-2 mt-2">
+                            <li class="flex items-start">
+                                <i data-lucide="chevron-right" class="h-5 w-5 text-gray-500 mr-2 flex-shrink-0 mt-0.5"></i>
+                                <span>Advisor : Jongchul Ye</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-gray-300">
+                        <div class="absolute -left-3 top-1 w-5 h-5 bg-gray-800 rounded-full border-4 border-gray-100"></div>
+                        <h3 class="text-xl font-semibold mb-1"> KAIRI Intern </h3>
+                        <p class="text-gray-600 text-sm mb-1">KAIST, Kim Jaechul Graduate School of AI</p>
+                        <p class="text-gray-500 text-xs mb-3">December 2022 – February 2023</p>
+                        <ul class="text-gray-700 space-y-2 mt-2">
+                            <li class="flex items-start">
+                                <i data-lucide="chevron-right" class="h-5 w-5 text-gray-500 mr-2 flex-shrink-0 mt-0.5"></i>
+                                <span>Advisor : Jaegul Choo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="publications" class="py-16 sm:py-24 bg-gray-900 text-gray-100 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Recent Publications</h2>
+                <div class="space-y-6 max-w-4xl mx-auto">
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-lift-dark transition-all">
+                        <h3 class="text-xl font-semibold mb-2 leading-tight">Representation Alignment for Just Image Transformers is not Easier than You Think</h3>
+                        <p class="text-gray-300 text-base mb-4"><strong>Jaeyo Shin</strong>*, Jiwook Kim*, Hyunjung Shim. <br><i>ArXiv</i>, 2026.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://arxiv.org/abs/2603.14366" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> PDF
+                            </a>
+                            <a href="https://github.com/kaist-cvml/PixelREPA" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="code" class="h-4 w-4 mr-2"></i> CODE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-lift-dark transition-all">
+                        <h3 class="text-xl font-semibold mb-2 leading-tight">Real-Time Long Horizon Air Quality Forecasting via Group-Relative Policy Optimization</h3>
+                        <p class="text-gray-300 text-base mb-4">Inha Kang, Eunki Kim, Wonjeong Ryu, <strong>Jaeyo Shin</strong>, Seungjun Yu, Yoon-Hee Kang, Seongeun Jeong, Eunhye Kim, Soontae Kim, Hyunjung Shim. <br><i>Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</i>, 2026.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://arxiv.org/abs/2511.22169" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> PDF
+                            </a>
+                            <a href="https://github.com/kaist-cvml/FAKER-Air" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="code" class="h-4 w-4 mr-2"></i> CODE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-lift-dark transition-all">
+                        <h3 class="text-xl font-semibold mb-2 leading-tight">WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving</h3>
+                        <p class="text-gray-300 text-base mb-4">Seungjun Yu, Seonho Lee, Namho Kim, <strong>Jaeyo Shin</strong>, Junsung Park, Wonjeong Ryu, Raehyuk Jung, Hyunjung Shim. <br><i>Arxiv</i>, 2025.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://arxiv.org/abs/2511.20022" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> PDF
+                            </a>
+                            <!-- <a href="#" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="code" class="h-4 w-4 mr-2"></i> CODE
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-lift-dark transition-all">
+                        <h3 class="text-xl font-semibold mb-2 leading-tight">CoT-PL: Visual Chain-of-Thought Reasoning Meets Pseudo-Labeling for Open-Vocabulary Object Detection</h3>
+                        <p class="text-gray-300 text-base mb-4">Hojun Choi, Youngsun Lim, <strong>Jaeyo Shin</strong>, Hyunjung Shim. <br><i>Arxiv</i>, 2025.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://arxiv.org/abs/2510.14792" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> PDF
+                            </a>
+                            <a href="https://github.com/hchoi256/cotpl" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="code" class="h-4 w-4 mr-2"></i> CODE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-lift-dark transition-all">
+                        <h3 class="text-xl font-semibold mb-2 leading-tight">Dreamcatalyst: Fast and high-quality 3d editing via controlling editability and identity preservation</h3>
+                        <p class="text-gray-300 text-base mb-4">Jiwook Kim*, Seonho Lee*, <strong>Jaeyo Shin</strong>, Jiho Choi, HyunjungShim. <br><i>International Conference on Learning Representations (<strong>ICLR</strong>)</i>, 2025.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://arxiv.org/abs/2407.11394" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> PDF
+                            </a>
+                            <a href="https://github.com/kaist-cvml/DreamCatalyst" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="code" class="h-4 w-4 mr-2"></i> CODE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-lift-dark transition-all">
+                        <h3 class="text-xl font-semibold mb-2 leading-tight">Magicapture: High-resolution multi-concept portrait customization</h3>
+                        <p class="text-gray-300 text-base mb-4">Junha Hyung*, <strong>Jaeyo Shin</strong>*, Jaegul Choo. <br><i>Association for the Advancement of Artificial Intelligence (<strong>AAAI</strong></i>, 2024.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="file-text" class="h-4 w-4 mr-2"></i> PDF
+                            </a>
+                            <a href="https://github.com/junhahyung/MagiCapture" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-200 hover:bg-gray-600 hover:text-white rounded-md text-sm font-medium transition-colors border border-gray-600">
+                                <i data-lucide="code" class="h-4 w-4 mr-2"></i> CODE
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="text-center mt-10 text-gray-400">
+                    <a href="https://scholar.google.com/citations?user=UbZM7nQAAAAJ" target="_blank" class="hover:text-gray-200 underline">View all publications on Google Scholar</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 sm:py-24 bg-gray-800 text-gray-100 animated-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Get In Touch</h2>
+                <p class="text-lg text-gray-300 mb-10 max-w-xl mx-auto">I'm always open to discussing new research, collaborations, or interesting opportunities. Feel free to reach out!</p>
+                <div class="space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:space-x-6">
+                    <a href="mailto:jaeyo_shin@kaist.ac.kr" class="inline-flex items-center justify-center w-full sm:w-auto bg-gray-100 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-200 transition-colors shadow-md">
+                        <i data-lucide="mail" class="h-5 w-5 mr-2"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaeyo-shin-53b1a2261/" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-gray-700 text-gray-100 font-semibold py-3 px-6 rounded-lg hover:bg-gray-600 transition-colors shadow-md">
+                        <i data-lucide="linkedin" class="h-5 w-5 mr-2"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/j-mayo" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-gray-700 text-gray-100 font-semibold py-3 px-6 rounded-lg hover:bg-gray-600 transition-colors shadow-md">
+                        <i data-lucide="github" class="h-5 w-5 mr-2"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 bg-gray-950 text-gray-400 text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-sm">&copy; <span id="current-year"></span> Jaeyo Shin. All rights reserved.</p>
+            <p class="text-xs mt-1">Designed with a focus on sophisticated minimalism.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
